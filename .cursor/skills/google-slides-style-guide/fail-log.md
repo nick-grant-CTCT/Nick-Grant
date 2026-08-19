@@ -24,6 +24,7 @@ After thumbnails + V1–V9:
 | Visual hierarchy / whitespace / icons | Concrete V-check or fail example in [qa.md](qa.md) |
 | Recurring composition that worked | Keep in deck `draw()`; promote to layouts/examples only after a **third** similar use |
 | New use case | New file under `examples/` + WHEN-TO-COPY row |
+| Live reference pattern (GEM / programme / brand) | [examples/reference-decks.md](examples/reference-decks.md) + preferences / layouts |
 | Durable taste (density, phrasing, audience) | [preferences.md](preferences.md) |
 
 Write **commands**, not vibes: “Do not put Asks on a separate `twoCol`” beats “prefer cleaner briefings.”

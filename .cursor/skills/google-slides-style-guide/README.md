@@ -83,7 +83,7 @@ Pick the starter with [examples/WHEN-TO-COPY.md](examples/WHEN-TO-COPY.md).
 | `assets.md` | Drive libraries + icon selection playbook |
 | `qa.md` | Automated + visual pass/fail gate (+ encoded fail notes) |
 | `scripts/` | `deck.js` engine + `new-deck.js` runner + `test-story-shapes.js` |
-| `examples/` | Worked specs + when-to-copy index |
+| `examples/` | Worked specs + when-to-copy index + [reference-decks.md](examples/reference-decks.md) live style references |
 
 ## Skill improvement (critique → encode)
 

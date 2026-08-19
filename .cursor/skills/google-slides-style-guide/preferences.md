@@ -9,8 +9,9 @@ Read after [tokens.md](tokens.md) / [layouts.md](layouts.md); never override bra
 | Use | Prefer | Avoid |
 |-----|--------|--------|
 | Weekday delivery briefing | Snapshot wells + takeaway cards once + EM/PM/PjM `draw()` figures | Reusing briefing shape for other uses; separate Asks `twoCol`; collector mechanics |
-| Status / programme board | Named columns or lanes for named work; one accent for the ask | Status-well triplets when the sentence lists programmes by name |
-| Decision / justification | Comparison panels or a single decisive figure + clear ask | Bullets that restate the figure; decorative product icons |
+| GEM / exec narrative (V3 Unite value story) | Now→Next bridge, then PREVIOUSLY vs PLATFORM bars; numbered Change+Why panels; roadmap swimlanes — see [examples/reference-decks.md](examples/reference-decks.md) Draft GEM | Mixing two speed concepts on one bar; traditional programme chrome when the story is a critical narrative |
+| Status / programme board | Named columns or lanes for named work; one accent for the ask — see Major Program reference | Status-well triplets when the sentence lists programmes by name |
+| Decision / justification | Split prose argument and big-metric figure across two slides when both are needed; single accent ask | Bullets that restate the figure; decorative product icons; cramming 2x metrics onto the prose slide |
 | Handoff / onboarding | Sequence or wave figure designed for that sentence (`draw()`) | Pouring into wells + chevrons + product grid because recipes exist |
 | Product lineup | Isometrics **only** for products the slide names | Nearby ECU / display / radio as decoration |
 
@@ -18,8 +19,9 @@ Read after [tokens.md](tokens.md) / [layouts.md](layouts.md); never override bra
 
 - **Figure first.** The figure is the slide; text is the caption. One-line summary under the title, then the figure.
 - Prefer **one dominant visual** per content slide. Do not stack a second text recipe beside it.
-- Titles: **outcome-led** where possible (“What shipped”, “Where we are blocked”), not process labels (“Update”, “Notes”).
-- Keep body copy short. If a slide needs a long explanation, split the story across slides instead of cramming cards.
+- Titles: **outcome-led** where possible (“What shipped”, “Where we are blocked”), not process labels (“Update”, “Notes”). Pipe form `Topic | framing` is OK when the GEM reference uses it.
+- Keep body copy short. If a slide needs a long explanation, split the story across slides instead of cramming cards (prose slide → metrics slide, as in the Major Program cost-of-parallel pair).
+- Put talk tracks in **speaker notes**, not on-slide paragraphs (GEM reference).
 
 ## Title photos
 
@@ -44,7 +46,11 @@ Copy [examples/morning-briefing.js](examples/morning-briefing.js) **only** for a
 
 ### Unite / programme readout
 Story outline first. Prefer named work and decisions over status chrome.
-See [examples/WHEN-TO-COPY.md](examples/WHEN-TO-COPY.md) and [examples/programme-readout.js](examples/programme-readout.js).
+See [examples/WHEN-TO-COPY.md](examples/WHEN-TO-COPY.md), [examples/programme-readout.js](examples/programme-readout.js), and the Major Program live deck in [examples/reference-decks.md](examples/reference-decks.md).
+Title lockup may list owners: `Name (Project)  Name (Product)  Name (Tech)  Name (Design)`.
+
+### GEM / exec value narrative
+Match Draft GEM slides in [examples/reference-decks.md](examples/reference-decks.md): section number on title, Now→Next before bars, numbered UX Change+Why, problems↔strategy columns, roadmap swimlanes, three closing value pillars.
 
 ### Agent-designed layouts
 When no recipe matches the sentence, follow [examples/onboarding-waves.js](examples/onboarding-waves.js): own `draw()` figures, kit tokens only.

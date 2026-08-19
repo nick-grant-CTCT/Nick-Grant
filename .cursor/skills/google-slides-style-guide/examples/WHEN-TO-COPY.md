@@ -6,7 +6,9 @@ Pick **one** starter by use. Do not mix morning-briefing chrome into a programme
 |-----|------|--------|
 | Weekday delivery / morning briefing | [morning-briefing.js](morning-briefing.js) | Snapshot wells match 🟢/🟡/🔴; takeaway `cards` once; EM/PM/PjM via `draw()`; no separate Asks `twoCol` |
 | Agent-designed figure (handoff, waves, custom sequence) | [onboarding-waves.js](onboarding-waves.js) | Story sentence → own `draw()`; kit tokens only; promote to layouts only after a third similar deck |
-| Unite / programme board / named-work readout | [programme-readout.js](programme-readout.js) | Named columns/lanes for named programmes; decision accent; not status-well triplets |
+| Unite / programme board / named-work readout | [programme-readout.js](programme-readout.js) + Major Program live deck in [reference-decks.md](reference-decks.md) | Named columns/lanes; split prose vs metrics; owner line on title; not status-well triplets |
+| GEM / exec value narrative (V3 Unite) | Live **Draft GEM slides** in [reference-decks.md](reference-decks.md) | Now→Next → value bars → numbered Change+Why → roadmap swimlanes; compose with `draw()`, do not clone the file |
+| Brand layout gallery / chrome | Live **CTCT - Slide Template** in [reference-decks.md](reference-decks.md) | Type, section dividers, big stats, icon libraries — tokens still win |
 | Recipe-only demos / skill self-check | [skill-deck.json](skill-deck.json) | May set `qaAllowLabelChips` for chip demos — do not copy that flag into real decks |
 | Simple flow / system diagram | [flow-diagram.json](flow-diagram.json) | Only when the outline sentence is already a flow |
 | Licensing / Unite R1 style recipe deck | [unite-r1-licensing.json](unite-r1-licensing.json) | Recipe fit only; rewrite outline if recipes fight the story |

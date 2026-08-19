@@ -22,6 +22,7 @@ Do that **before** opening the recipe list or copying an example spec.
 1. Write the deck as an outline: one title and one sentence per slide. That outline **is** the story. Do not pick a `kind` yet.
 2. For each slide, choose the format that sentence needs. A weekday briefing, a justification, a handoff, and a product lineup are different uses. Do not reuse the morning-briefing shape for another use.
 3. Only then read [layouts.md](layouts.md) for how CTCT figures look, and compose with `draw()` or a recipe that actually matches that sentence.
+4. When the use matches a live reference deck (GEM narrative, major programme board, brand gallery), open [examples/reference-decks.md](examples/reference-decks.md) and match that deck’s story shapes and density — do not screenshot-copy slides.
 
 Fail the outline, not the recipe, if they disagree. If the sentence is a named list of programmes, draw the names. Do not replace names with wells, a 100% bar, or a product-icon grid because those recipes exist.
 
@@ -32,9 +33,10 @@ Read these companions in this order:
 1. [template.md](template.md) — copy Empty Slide, object IDs, photo pipeline, `draw()` + kit
 2. [tokens.md](tokens.md) — CTCT-2024 palette and type. **These tokens win any conflict.**
 3. [layouts.md](layouts.md) — figure vocabulary after the outline exists; recipes are not a menu
-4. [qa.md](qa.md) — automated + visual gate
-5. [assets.md](assets.md) and [functional-areas.md](functional-areas.md) when icons or org areas appear
-6. [preferences.md](preferences.md) — Nick judgment layer (story shapes, density, audiences). Does not override tokens.
+4. [examples/reference-decks.md](examples/reference-decks.md) — live style/layout references (GEM, major programme, CTCT template)
+5. [qa.md](qa.md) — automated + visual gate
+6. [assets.md](assets.md) and [functional-areas.md](functional-areas.md) when icons or org areas appear
+7. [preferences.md](preferences.md) — Nick judgment layer (story shapes, density, audiences). Does not override tokens.
 
 ## Tokens (do not substitute)
 
@@ -100,10 +102,11 @@ The builder writes `.tmp/presentation.json` (id, url, thumbs, qa) when that dire
 
 1. Outline the story (title + one sentence per slide). Choose a format per slide from that sentence. Check [preferences.md](preferences.md) for audience must-haves.
 2. Generate a new title photo for this deck.
-3. Compose each content slide. Pick the example to copy with [examples/WHEN-TO-COPY.md](examples/WHEN-TO-COPY.md):
+3. Compose each content slide. Pick the example to copy with [examples/WHEN-TO-COPY.md](examples/WHEN-TO-COPY.md), and align density/shapes with [examples/reference-decks.md](examples/reference-decks.md):
    - [examples/morning-briefing.js](examples/morning-briefing.js) **only** for a weekday delivery briefing
    - [examples/onboarding-waves.js](examples/onboarding-waves.js) when inventing `draw()` figures
    - [examples/programme-readout.js](examples/programme-readout.js) for Unite / programme board readouts
+   - Live GEM / major-programme decks in reference-decks.md when the outline is that use
 4. Run `new-deck.js`. Fix automated failures before anything else.
 5. Read every thumbnail. Record per-slide V1–V9 pass/fail.
 6. Only then share, move to Drive, or notify.
@@ -119,7 +122,8 @@ The builder writes `.tmp/presentation.json` (id, url, thumbs, qa) when that dire
 - Hand-roll shapes onto a blank presentation
 - Keep a default template landscape photo
 - Declare QA passed from overflow checks alone
-- Skip `template.md` / `tokens.md` / `layouts.md` / `preferences.md`
+- Skip `template.md` / `tokens.md` / `layouts.md` / `preferences.md` / `examples/reference-decks.md`
+- Screenshot-copy slides from reference decks into a new presentation (compose with the builder instead)
 - Use a local `.tmp/build_*.py` or other ad-hoc Slides client
 - Map a briefing onto `cards` + `rows` + `twoCol`
 - Treat one- or two-letter hex chips as icons
