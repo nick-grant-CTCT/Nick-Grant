@@ -49,7 +49,7 @@ Use this figure when the outline sentence is **named features we ship along one 
 
 Geometry (16:9, content band `y` ≈ 2.0–5.05 in):
 
-1. Horizontal winding road: three peaks and two valleys (`cos(t · 4π)` for `t` in 0…1). Road fill `#555555`, **brand-orange** `#FF8B00` edge, white dashed centerline.
+1. Horizontal winding road: three peaks and two valleys (`cos(t · 4π)` for `t` in 0…1) when there are **5** pins. For **4** pins use `cos(t · 3π)` so pins still alternate peak / valley (see [site-contractor-roadmap.js](examples/site-contractor-roadmap.js)). Road fill `#555555`, **brand-orange** `#FF8B00` edge, white dashed centerline.
 2. Default **5** pins (allow 4–6) at `t` = 0, 0.25, 0.5, 0.75, 1 — peaks and valleys, left-to-right delivery order.
 3. Pin head = `ELLIPSE` (plus a small `TRIANGLE`/`RECTANGLE` stem). Cards, panels, and nodes stay `RECTANGLE`.
 4. Info card above each pin: feature title + up to 3 bullets. Card fill `#F2F2F2`, heading `#595959`.

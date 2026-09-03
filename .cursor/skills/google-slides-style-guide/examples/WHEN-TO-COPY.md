@@ -5,7 +5,7 @@ Pick **one** starter by use. Do not mix morning-briefing chrome into a programme
 | Use | Copy | Notes |
 |-----|------|--------|
 | Weekday delivery / morning briefing | [morning-briefing.js](morning-briefing.js) | Snapshot wells match 🟢/🟡/🔴; takeaway `cards` once; EM/PM/PjM via `draw()`; no separate Asks `twoCol` |
-| Feature / product roadmap (single delivery path) | [feature-roadmap-road.js](feature-roadmap-road.js) | Winding road + pins; CTCT tokens; not swimlanes, not chevrons |
+| Feature / product roadmap (single delivery path) | [feature-roadmap-road.js](feature-roadmap-road.js) | Winding road + pins; CTCT tokens; not swimlanes, not chevrons. Live rewrite with real MMP copy: [site-contractor-roadmap.js](site-contractor-roadmap.js) |
 | Agent-designed figure (handoff, waves, custom sequence) | [onboarding-waves.js](onboarding-waves.js) | Story sentence → own `draw()`; kit tokens only; promote to layouts only after a third similar deck |
 | Unite / programme board / named-work readout | [programme-readout.js](programme-readout.js) + Major Program live deck in [reference-decks.md](reference-decks.md) | Named columns/lanes; split prose vs metrics; owner line on title; not status-well triplets |
 | GEM / exec value narrative (V3 Unite) | Live **Draft GEM slides** in [reference-decks.md](reference-decks.md) | Now→Next → value bars → numbered Change+Why → roadmap swimlanes; compose with `draw()`, do not clone the file |
