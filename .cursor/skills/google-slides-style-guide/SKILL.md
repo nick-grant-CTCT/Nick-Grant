@@ -5,8 +5,9 @@ description: >-
   scripts/new-deck.js, CTCT-2024 tokens, layout composition, Nick preferences,
   and a fail-closed QA gate. Use when creating, restyling, or updating a CTCT,
   Unite, or programme slide deck, morning briefing slides, weekday delivery
-  briefing, Unite readout, programme board, or any Google Slides deliverable
-  that must look like CTCT Brand 2024.
+  briefing, Unite readout, programme board, product roadmap, feature roadmap,
+  delivery timeline, winding-road feature path, or any Google Slides
+  deliverable that must look like CTCT Brand 2024.
 ---
 
 # CTCT Google Slides
@@ -24,7 +25,7 @@ Do that **before** opening the recipe list or copying an example spec.
 3. Only then read [layouts.md](layouts.md) for how CTCT figures look, and compose with `draw()` or a recipe that actually matches that sentence.
 4. When the use matches a live reference deck (GEM narrative, major programme board, brand gallery), open [examples/reference-decks.md](examples/reference-decks.md) and match that deck’s story shapes and density — do not screenshot-copy slides.
 
-Fail the outline, not the recipe, if they disagree. If the sentence is a named list of programmes, draw the names. Do not replace names with wells, a 100% bar, or a product-icon grid because those recipes exist.
+Fail the outline, not the recipe, if they disagree. If the sentence is a named list of programmes, draw the names. Do not replace names with wells, a 100% bar, or a product-icon grid because those recipes exist. If the sentence is **features we deliver along one path**, draw the winding-road figure — not swimlanes and not chevrons.
 
 ## Before drawing
 
@@ -58,7 +59,7 @@ Do not use `#FF6B00`, white card fills, 28–32pt titles, or a plain off-white c
 3. **Fresh title photo.** Generate a photorealistic CTCT-domain photo (≥800×450), no baked-in text, calm left side for white title type. Swap it onto the **layout** photo with `replaceImage` + `CENTER_CROP`.
 4. **Builder only.** `node scripts/new-deck.js <spec.json|spec.js>` from this skill folder (or an equivalent wrapper that calls that file). No second builder.
 5. **In-place updates.** To keep an existing URL, set `presentationId` in the spec. The builder rebuilds that deck. Do not invent a parallel script.
-6. **Hard rule 14 — story, then format.** The outline from **Story first** wins. Write a `.js` spec with `draw(r, page, ctx)` and `ctx.kit` whenever the sentence is not already a stock recipe. See [examples/onboarding-waves.js](examples/onboarding-waves.js) for a use that designed its own figures. See [examples/morning-briefing.js](examples/morning-briefing.js) only when the use **is** a weekday delivery briefing.
+6. **Hard rule 14 — story, then format.** The outline from **Story first** wins. Write a `.js` spec with `draw(r, page, ctx)` and `ctx.kit` whenever the sentence is not already a stock recipe. See [examples/feature-roadmap-road.js](examples/feature-roadmap-road.js) for a single-path feature roadmap. See [examples/onboarding-waves.js](examples/onboarding-waves.js) for other invented figures. See [examples/morning-briefing.js](examples/morning-briefing.js) only when the use **is** a weekday delivery briefing.
 7. **Recipes are not a menu.** Do not walk [layouts.md](layouts.md) and pour the story into wells, panels, chevrons, stacked columns, and a product grid. `cards`, `rows`, `bullets`, `twoCol` are last-resort shortcuts. Morning briefings may use `cards` once for takeaways. Do not add a second text recipe for asks. Do not reuse the same text recipe across slides. Do not map a whole briefing onto cards + rows + twoCol.
 8. **Hard rule 12 — visuals that belong.** Every content slide needs a real figure for **that sentence**. An isometric product PNG is only valid when the slide is about that box. Do not decorate a concept, a kill, or a named programme with a nearby product. Missing art is better than the wrong product. No emoji. No letter hex chips (`BL`, `QA`). Do not use the devices SVG library or monoline template chips when an isometric exists **and matches**.
 9. **Square corners.** Cards, panels, wells, insight boxes, and process nodes are `RECTANGLE`. Do not use `ROUND_RECTANGLE`. The CONFIDENTIAL pill is template chrome — do not recreate it.
@@ -104,9 +105,10 @@ The builder writes `.tmp/presentation.json` (id, url, thumbs, qa) when that dire
 2. Generate a new title photo for this deck.
 3. Compose each content slide. Pick the example to copy with [examples/WHEN-TO-COPY.md](examples/WHEN-TO-COPY.md), and align density/shapes with [examples/reference-decks.md](examples/reference-decks.md):
    - [examples/morning-briefing.js](examples/morning-briefing.js) **only** for a weekday delivery briefing
-   - [examples/onboarding-waves.js](examples/onboarding-waves.js) when inventing `draw()` figures
+   - [examples/feature-roadmap-road.js](examples/feature-roadmap-road.js) for a single-path feature / product roadmap (winding road + pins)
+   - [examples/onboarding-waves.js](examples/onboarding-waves.js) when inventing other `draw()` figures
    - [examples/programme-readout.js](examples/programme-readout.js) for Unite / programme board readouts
-   - Live GEM / major-programme decks in reference-decks.md when the outline is that use
+   - Live GEM / major-programme decks in reference-decks.md when the outline is that use (GEM parallel-track roadmaps stay swimlanes)
 4. Run `new-deck.js`. Fix automated failures before anything else.
 5. Read every thumbnail. Record per-slide V1–V9 pass/fail.
 6. Only then share, move to Drive, or notify.
@@ -131,3 +133,5 @@ The builder writes `.tmp/presentation.json` (id, url, thumbs, qa) when that dire
 - Put collector mechanics on a briefing (“Jira confirmed”, “via gh”, “Jenkins main”)
 - Draw a one-bar “trends over time” slide when theme history has only today
 - Add a separate Asks `twoCol` on a morning briefing (asks live on the project-manager figure)
+- Use chevrons or GEM swimlanes when the sentence is a **single** feature-delivery path (use the winding-road `draw()` instead)
+- Recreate the winding-road figure with pastel stock colours or `ROUND_RECTANGLE` cards

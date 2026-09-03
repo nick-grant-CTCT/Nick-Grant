@@ -44,6 +44,7 @@ These failures are already in preferences / SKILL / QA — do not re-log unless 
 | One-bar trend with only today | SKILL Do not, preferences #7 |
 | Same text recipe reused across slides | SKILL hard rule 7, preferences #8, story-shape checks |
 | `ROUND_RECTANGLE` on agent-drawn shapes | SKILL hard rule 9, preferences #9, automated square-corners |
+| Chevrons/swimlanes on a single-path feature roadmap | SKILL Do not, preferences #10, layouts winding-road, qa V9 |
 
 ## Open log
 

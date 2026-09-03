@@ -17,15 +17,19 @@ Access note: if a row says “access pending”, re-share the deck with the agen
 
 ## 1. CTCT - Slide Template (brand vocabulary)
 
-Use for: chrome, type, section dividers, big-stat wells, TOC, icon placement rules.
+Use for: chrome, type, section dividers, big-stat wells, TOC, icon placement, **Image Assets**, infographic colour.
+
+Master file: `1KXJnuCfkHnIekoKv_mU5F87n-eTOJvjWQ2rPH3qVfoM`. Never edit it. Image folder: `1ENm6a1yZEMr7G-4totgbjG06OIYTzs7C`. Brand PDF: `1HN0r9bXqFs7ZGzPasJ8bucoSco6USstj`.
 
 Patterns to copy:
 
-- **Proxima Nova** titles; theme brand colours only.
+- **Proxima Nova** titles (22–25pt); Inter body 12–14pt; theme brand colours only ([tokens.md](../tokens.md) wins).
 - **CONFIDENTIAL** badge bottom-left (template chrome — do not redraw).
-- Orange / filtered hero imagery **only on title / intro** slides; unfiltered photography on content slides.
+- **Image Assets:** orange / filtered hero imagery **only on title / intro** slides; unfiltered photography on content slides; Rangoli / hexagon / component images stay in those named layouts — do not paste intro oranges onto a roadmap.
 - Layout gallery shapes: vision quote, principles grid, numbered columns, big stats (`20M` / `89%` / `54`), section openers with large `01`.
-- Icons from the template libraries — recolour with fill; do not invent emoji.
+- **Icon Library** (Educational, Business, Teamwork, Help, Creative, Tech): cut/copy from the template and recolour with Fill Color; do not invent emoji.
+- Infographic / diagram difference uses the boxed brand-book accents (`#00A3D6`, `#6AA84F`, `#A64D79`, light washes) — not a downloaded pastel timeline.
+- Single-path **feature delivery** is not in this gallery; compose the winding-road figure from [feature-roadmap-road.js](feature-roadmap-road.js) using those tokens.
 
 ## 2. Draft GEM slides (story-led exec / GEM)
 
@@ -38,7 +42,7 @@ Patterns to copy:
 - **Pipe titles:** `Topic | framing` (e.g. `The Value of V3 | Today vs the V3 Platform`).
 - **Numbered change panels:** `01 · Name` / short label / Change + Why (four UX changes).
 - **Problems ↔ Strategy:** two columns of numbered items; strategy answers the problems — not a dump of bullets.
-- **Roadmap swimlanes:** time across the top; parallel tracks (Demo spikes, Builds, UX, UA, OGC) with dated milestones — figure dominates.
+- **Roadmap swimlanes:** time across the top; parallel tracks (Demo spikes, Builds, UX, UA, OGC) with dated milestones — figure dominates. **Not** the figure for a single feature-delivery path (that is the winding road).
 - **Three value pillars** as closing figure (icon + short name + one sentence).
 - **Talk track off-slide:** dense explanation lives in speaker notes; on-slide stays sparse.
 

@@ -59,7 +59,7 @@ Treat these as automatic V-fails even if a checklist row is ambiguous:
 - **V2 / V3:** A content slide that is mostly empty cards or a second text recipe beside the figure → FAIL (figure should dominate; see [preferences.md](preferences.md) density).
 - **V5 / V6:** Any `EC520`, `WIN10 Display`, or `Radio Antenna` isometric on a slide that does not name that product → FAIL.
 - **V5:** One- or two-letter hex chips (`BL`, `QA`, …) used as icons → FAIL (unless `qaAllowLabelChips` on an example spec).
-- **V9 / story:** Morning-briefing layout (snapshot wells + takeaway cards + audience wells) on a non-briefing use → FAIL story-format; rebuild from outline.
+- **V9 / story:** Chevrons or GEM swimlanes on a **single-path** feature/product roadmap → FAIL; rebuild from [examples/feature-roadmap-road.js](examples/feature-roadmap-road.js).
 - **Audience:** Separate Asks `twoCol` on a weekday briefing → FAIL; asks belong on the project-manager figure.
 - **Audience:** Collector mechanics text (“Jira confirmed”, “via gh”, “Jenkins main”) on slides → FAIL.
 - **Trends:** Single-bar “over time” figure when only today’s point exists → FAIL; use a snapshot figure instead.

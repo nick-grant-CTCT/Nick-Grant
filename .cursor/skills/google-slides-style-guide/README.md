@@ -45,7 +45,7 @@ Open a **new** Cursor chat after installing so the agent can discover the skill.
 
 In Cursor Agent chat, ask for example:
 
-> Create a CTCT slide deck about Program X with a title slide, a status update, and a roadmap timeline.
+> Create a CTCT slide deck about Program X with a title slide, a status update, and a feature roadmap (winding road).
 
 Or:
 
@@ -62,6 +62,7 @@ For a scripted build, write a spec and run:
 
 ```bash
 node scripts/new-deck.js examples/morning-briefing.js   # briefing only
+node scripts/new-deck.js examples/feature-roadmap-road.js  # single-path feature roadmap
 node scripts/new-deck.js examples/onboarding-waves.js   # agent-designed layout
 node scripts/new-deck.js examples/programme-readout.js  # Unite / named-work board
 node scripts/new-deck.js examples/skill-deck.json       # recipe-driven (qaAllowLabelChips)

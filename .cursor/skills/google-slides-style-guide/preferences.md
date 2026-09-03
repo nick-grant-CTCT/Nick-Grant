@@ -9,7 +9,8 @@ Read after [tokens.md](tokens.md) / [layouts.md](layouts.md); never override bra
 | Use | Prefer | Avoid |
 |-----|--------|--------|
 | Weekday delivery briefing | Snapshot wells + takeaway cards once + EM/PM/PjM `draw()` figures | Reusing briefing shape for other uses; separate Asks `twoCol`; collector mechanics |
-| GEM / exec narrative (V3 Unite value story) | Now→Next bridge, then PREVIOUSLY vs PLATFORM bars; numbered Change+Why panels; roadmap swimlanes — see [examples/reference-decks.md](examples/reference-decks.md) Draft GEM | Mixing two speed concepts on one bar; traditional programme chrome when the story is a critical narrative |
+| GEM / exec narrative (V3 Unite value story) | Now→Next bridge, then PREVIOUSLY vs PLATFORM bars; numbered Change+Why panels; **parallel-track** roadmap swimlanes — see [examples/reference-decks.md](examples/reference-decks.md) Draft GEM | Mixing two speed concepts on one bar; traditional programme chrome when the story is a critical narrative; winding-road on a multi-track GEM plan |
+| Feature / product roadmap (single delivery path) | Winding-road `draw()` with named feature pins — [examples/feature-roadmap-road.js](examples/feature-roadmap-road.js) | Chevrons, GEM swimlanes, pastel stock infographic colours, `ROUND_RECTANGLE` cards |
 | Status / programme board | Named columns or lanes for named work; one accent for the ask — see Major Program reference | Status-well triplets when the sentence lists programmes by name |
 | Decision / justification | Split prose argument and big-metric figure across two slides when both are needed; single accent ask | Bullets that restate the figure; decorative product icons; cramming 2x metrics onto the prose slide |
 | Handoff / onboarding | Sequence or wave figure designed for that sentence (`draw()`) | Pouring into wells + chevrons + product grid because recipes exist |
@@ -52,8 +53,11 @@ Title lockup may list owners: `Name (Project)  Name (Product)  Name (Tech)  Name
 ### GEM / exec value narrative
 Match Draft GEM slides in [examples/reference-decks.md](examples/reference-decks.md): section number on title, Now→Next before bars, numbered UX Change+Why, problems↔strategy columns, roadmap swimlanes, three closing value pillars.
 
+### Feature / product roadmap (single path)
+Copy [examples/feature-roadmap-road.js](examples/feature-roadmap-road.js). One winding road, 4–6 named pins, ≤3 bullets per card. Keep GEM swimlanes for parallel workstreams only.
+
 ### Agent-designed layouts
-When no recipe matches the sentence, follow [examples/onboarding-waves.js](examples/onboarding-waves.js): own `draw()` figures, kit tokens only.
+When no recipe matches the sentence, follow [examples/onboarding-waves.js](examples/onboarding-waves.js): own `draw()` figures, kit tokens only. Feature-delivery paths use the winding-road example, not a new chrome language.
 
 ## Encoded taste (from past critiques)
 
@@ -68,6 +72,7 @@ These already failed in real decks — treat as hard preferences:
 7. Do not draw a one-bar “trends over time” slide when history is only today.
 8. Do not reuse the same text recipe (`cards` / `rows` / `twoCol` / `bullets`) across slides.
 9. Square corners only (`RECTANGLE`) for agent-drawn cards, panels, wells, nodes.
+10. Do not draw GEM swimlanes or chevrons when the sentence is a single-path feature roadmap — use the winding-road figure.
 
 ## How to extend this file
 

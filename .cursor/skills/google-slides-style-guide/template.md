@@ -34,4 +34,4 @@ If `scripts/deck.js` / `new-deck.js` are missing from this install, copy them fr
 
 ## Kit
 
-`draw()` compositions use `ctx.kit` helpers from `scripts/deck.js`. Copy primitives from [examples/onboarding-waves.js](examples/onboarding-waves.js) when inventing a figure. Content band ≈ `y` 2.0–5.05 in.
+`draw()` compositions use `ctx.kit` helpers from `scripts/deck.js`. Copy primitives from [examples/feature-roadmap-road.js](examples/feature-roadmap-road.js) (winding-road roadmap) or [examples/onboarding-waves.js](examples/onboarding-waves.js) (other invented figures). Content band ≈ `y` 2.0–5.05 in.
