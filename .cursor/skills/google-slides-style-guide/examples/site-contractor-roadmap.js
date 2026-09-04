@@ -9,8 +9,12 @@
  * Delivery order follows the source slide (MMP3 before MMP2).
  * MMP1 is the accent (next / in-flight). Dates past MMP1 are indicative.
  *
- * Copy of Empty Slide this spec targets:
+ * Copy of Empty Slide this spec targets (chrome; run new-deck.js locally):
+ *   https://docs.google.com/presentation/d/1U1_2Xo_ScxdLMtuOKfHXt7occPvMkE5enK_aeJVpLCM/edit
  *   presentationId 1U1_2Xo_ScxdLMtuOKfHXt7occPvMkE5enK_aeJVpLCM
+ *
+ * Visual Google Slides (16:9 winding-road figure, converted from the spec render):
+ *   https://docs.google.com/presentation/d/1SZrbE-tU36qSXoPXlBjZDuOQTD4gG1rFhoORFlG9OYo/edit
  *
  * Run: node scripts/new-deck.js examples/site-contractor-roadmap.js
  */
