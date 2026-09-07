@@ -21,15 +21,16 @@ Use for: chrome, type, section dividers, big-stat wells, TOC, icon placement, **
 
 Master file: `1KXJnuCfkHnIekoKv_mU5F87n-eTOJvjWQ2rPH3qVfoM`. Never edit it. Image folder: `1ENm6a1yZEMr7G-4totgbjG06OIYTzs7C`. Brand PDF: `1HN0r9bXqFs7ZGzPasJ8bucoSco6USstj`.
 
-Patterns to copy:
+Patterns to copy (from the gallery’s Image Assets, colour, icon, and type slides):
 
-- **Proxima Nova** titles (22–25pt); Inter body 12–14pt; theme brand colours only ([tokens.md](../tokens.md) wins).
+- **Proxima Nova** titles (22–25pt); Inter body 12–14pt. Do not change the Google font family. Theme brand colours only — they are preloaded in the Theme palette ([tokens.md](../tokens.md) wins).
 - **CONFIDENTIAL** badge bottom-left (template chrome — do not redraw).
-- **Image Assets:** orange / filtered hero imagery **only on title / intro** slides; unfiltered photography on content slides; Rangoli / hexagon / component images stay in those named layouts — do not paste intro oranges onto a roadmap.
+- **Image Assets** folders: Intro (orange) images, unfiltered images, Rangoli assets, Diagrams, Component image, Hexagon Slide template, Unsplash. **Orange images are only for intro & title slides; unfiltered images for the rest of the presentation.** Do not paste intro oranges onto a roadmap or other content slide.
+- Backgrounds: 16:9 from the Image Folder; swap via Slide → Change Background.
 - Layout gallery shapes: vision quote, principles grid, numbered columns, big stats (`20M` / `89%` / `54`), section openers with large `01`.
-- **Icon Library** (Educational, Business, Teamwork, Help, Creative, Tech): cut/copy from the template and recolour with Fill Color; do not invent emoji.
+- **Icon Library** (Educational, Business, Teamwork, Help and Support, Creative Process / Media, Tech): cut/copy from the template and recolour with Fill Color; do not invent emoji.
 - Infographic / diagram difference uses the boxed brand-book accents (`#00A3D6`, `#6AA84F`, `#A64D79`, light washes) — not a downloaded pastel timeline.
-- Single-path **feature delivery** is not in this gallery; compose the winding-road figure from [feature-roadmap-road.js](feature-roadmap-road.js) using those tokens.
+- Single-path **feature delivery** is not in this gallery; compose the winding-road figure from [feature-roadmap-road.js](feature-roadmap-road.js) using those tokens. Never edit this 52-slide master.
 
 ## 2. Draft GEM slides (story-led exec / GEM)
 

@@ -12,4 +12,5 @@ This skill expects:
 If these files are missing, copy them from your existing personal install at
 `~/.cursor/skills/google-slides-style-guide/scripts/` (Windows:
 `%USERPROFILE%\.cursor\skills\google-slides-style-guide\scripts\`) into this
-folder before running builds. Do not invent a second builder.
+folder before running builds. Do not invent a second builder, a Python/PPTX
+client, or a second skill folder. Keep Empty Slide + `new-deck.js`.

@@ -129,6 +129,7 @@ Keep CTCT-2024 tokens and Empty Slide non-negotiable. Personalize judgment in `p
 ## Limits
 
 - Style skill ≠ Aha / Jira / Confluence connectors (those are separate)
-- Do **not** edit the template or example decks in place — the builder copies them
+- Do **not** edit Empty Slide, the 52-slide CTCT Slide Template master, or example decks in place — the builder copies Empty Slide
+- Do **not** add a second skill folder or a Python/PPTX builder — keep `scripts/new-deck.js`
 - Needs working `gws` auth, Drive permissions, and `scripts/` to build real slides
 - A non-CTCT personal presentation voice should be a **separate** skill folder, not overlays on tokens here

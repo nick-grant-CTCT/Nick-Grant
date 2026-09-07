@@ -54,10 +54,10 @@ Do not use `#FF6B00`, white card fills, 28–32pt titles, or a plain off-white c
 
 ## Hard rules
 
-1. **Copy the template.** Every new deck is `drive files copy` of Empty Slide (`1Bl1tpH-fqY_vUW8_B2vBcAPkJbVOsMMUlIB5l7u-QYs`). Update slide 1 and slide 2; duplicate slide 2 for more pages. Never delete the two starter slides. Never edit the template file.
+1. **Copy Empty Slide.** Every new deck is `drive files copy` of Empty Slide (`1Bl1tpH-fqY_vUW8_B2vBcAPkJbVOsMMUlIB5l7u-QYs`). Update slide 1 and slide 2; duplicate slide 2 for more pages. Never delete the two starter slides. Never edit Empty Slide. Never edit the 52-slide CTCT Slide Template master (`1KXJnuCfkHnIekoKv_mU5F87n-eTOJvjWQ2rPH3qVfoM`).
 2. **Do not draw chrome.** Slide numbers, CONFIDENTIAL badge, cube logo, honeycomb, title scrim and orange rule come from the layout. Do not recreate them.
 3. **Fresh title photo.** Generate a photorealistic CTCT-domain photo (≥800×450), no baked-in text, calm left side for white title type. Swap it onto the **layout** photo with `replaceImage` + `CENTER_CROP`.
-4. **Builder only.** `node scripts/new-deck.js <spec.json|spec.js>` from this skill folder (or an equivalent wrapper that calls that file). No second builder.
+4. **Builder only.** `node scripts/new-deck.js <spec.json|spec.js>` from this skill folder (or an equivalent wrapper that calls that file). No second builder, no second skill folder, no Python/PPTX client. If `scripts/deck.js` is missing, copy it from the personal skill install — see [scripts/README.md](scripts/README.md).
 5. **In-place updates.** To keep an existing URL, set `presentationId` in the spec. The builder rebuilds that deck. Do not invent a parallel script.
 6. **Hard rule 14 — story, then format.** The outline from **Story first** wins. Write a `.js` spec with `draw(r, page, ctx)` and `ctx.kit` whenever the sentence is not already a stock recipe. See [examples/feature-roadmap-road.js](examples/feature-roadmap-road.js) for a single-path feature roadmap. See [examples/onboarding-waves.js](examples/onboarding-waves.js) for other invented figures. See [examples/morning-briefing.js](examples/morning-briefing.js) only when the use **is** a weekday delivery briefing.
 7. **Recipes are not a menu.** Do not walk [layouts.md](layouts.md) and pour the story into wells, panels, chevrons, stacked columns, and a product grid. `cards`, `rows`, `bullets`, `twoCol` are last-resort shortcuts. Morning briefings may use `cards` once for takeaways. Do not add a second text recipe for asks. Do not reuse the same text recipe across slides. Do not map a whole briefing onto cards + rows + twoCol.
@@ -126,7 +126,8 @@ The builder writes `.tmp/presentation.json` (id, url, thumbs, qa) when that dire
 - Declare QA passed from overflow checks alone
 - Skip `template.md` / `tokens.md` / `layouts.md` / `preferences.md` / `examples/reference-decks.md`
 - Screenshot-copy slides from reference decks into a new presentation (compose with the builder instead)
-- Use a local `.tmp/build_*.py` or other ad-hoc Slides client
+- Use a local `.tmp/build_*.py`, python-pptx, or other ad-hoc Slides client
+- Add a second skill directory (e.g. `skills/ctct-slides/`) — extend this folder only
 - Map a briefing onto `cards` + `rows` + `twoCol`
 - Treat one- or two-letter hex chips as icons
 - Use devices-library SVGs or monoline template chips when a matching isometric exists

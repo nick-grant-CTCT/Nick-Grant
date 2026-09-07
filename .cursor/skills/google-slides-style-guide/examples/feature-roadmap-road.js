@@ -6,11 +6,14 @@
  * Do NOT use chevrons, pastel stock palettes, or ROUND_RECTANGLE cards.
  *
  * Story outline this spec encodes:
- *   1. Title (template) — photorealistic CTCT jobsite photo, not an orange intro filter
+ *   1. Title (template) — CTCT-domain photo; orange/filtered heroes are OK on title only
  *   2. Named features on one delivery road → winding-road draw()
  *
- * Kit: ctx.kit from scripts/deck.js. Helpers used below: shape/rect/ellipse/text.
+ * Kit: ctx.kit from scripts/deck.js (same pattern as onboarding-waves.js).
+ * Helpers used below: shape/rect/ellipse/text. Cards are RECTANGLE (hard rule 9).
  * If names differ in your install, map to the same inches. Content band y 2.0–5.05.
+ * Do not add a Python/PPTX builder if the kit is missing — copy scripts/ from the
+ * personal skill install instead.
  *
  * Run: node scripts/new-deck.js examples/feature-roadmap-road.js
  * See WHEN-TO-COPY.md and layouts.md (Winding-road feature roadmap).
@@ -28,7 +31,10 @@ const T = {
   purple: '#A64D79',
 };
 
-const PIN_CYCLE = [T.blue, T.orange, T.green, T.purple, T.road];
+/** Stage colours besides the single orange “now” accent. */
+const PIN_REST = [T.blue, T.green, T.purple, T.road];
+/** Index of the pin that is “now” / next delivery — always brand orange. */
+const ACCENT_INDEX = 1;
 
 /** Replace these with the live outline. 4–6 milestones. ≤3 bullets each. */
 const MILESTONES = [
@@ -134,7 +140,8 @@ function drawWindingRoad(r, page, ctx) {
   MILESTONES.forEach((m, i) => {
     const t = n === 1 ? 0.5 : i / (n - 1);
     const p = roadPoint(t, x0, x1, yMid, amp);
-    const accent = PIN_CYCLE[i % PIN_CYCLE.length];
+    const restI = i < ACCENT_INDEX ? i : i - 1;
+    const accent = i === ACCENT_INDEX ? T.orange : PIN_REST[restI % PIN_REST.length];
     const cardW = 1.72;
     const cardH = 1.05;
     const cardX = Math.min(Math.max(p.x - cardW / 2, 0.35), 10 - cardW - 0.35);

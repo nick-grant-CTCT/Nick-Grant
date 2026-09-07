@@ -31,7 +31,10 @@ const T = {
   purple: '#A64D79',
 };
 
-const PIN_CYCLE = [T.blue, T.orange, T.green, T.purple, T.road];
+/** Stage colours besides the single orange “now” accent (MMP1). */
+const PIN_REST = [T.blue, T.green, T.purple, T.road];
+/** MMP1 — next / in-flight. Always brand orange. */
+const ACCENT_INDEX = 1;
 
 /** Source order. Titles from Nick’s slide; bullets are short talk-track glosses. */
 const MILESTONES = [
@@ -142,7 +145,8 @@ function drawWindingRoad(r, page, ctx) {
   MILESTONES.forEach((m, i) => {
     const t = n === 1 ? 0.5 : i / (n - 1);
     const p = roadPoint(t, x0, x1, yMid, amp);
-    const accent = PIN_CYCLE[i % PIN_CYCLE.length];
+    const restI = i < ACCENT_INDEX ? i : i - 1;
+    const accent = i === ACCENT_INDEX ? T.orange : PIN_REST[restI % PIN_REST.length];
     const cardW = 2.12;
     const cardH = 1.32;
     const cardX = Math.min(Math.max(p.x - cardW / 2, 0.32), 10 - cardW - 0.32);

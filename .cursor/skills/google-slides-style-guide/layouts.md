@@ -18,7 +18,7 @@ Finish the per-slide outline in [SKILL.md](SKILL.md) and check [preferences.md](
 | Numbered changes with rationale | Numbered panels: name + Change + Why (GEM UX slide) |
 | Problems and matching strategy | Two columns of numbered items that answer each other |
 | Near-term roadmap with parallel workstreams | Swimlane timeline (spikes / builds / UX / UA) — GEM reference only |
-| Features we deliver along one path | Winding-road `draw()` with pins — see [feature-roadmap-road.js](examples/feature-roadmap-road.js) |
+| Features we deliver along a path | Winding-road `draw()` with pins — see [feature-roadmap-road.js](examples/feature-roadmap-road.js) |
 | Cost or effort multiplier | Big metric callouts on their own slide; keep the prose argument on the prior slide |
 | Change over time | Columns per period; lines only for continuous measures |
 | Split of a whole / machine mix | One 100% bar or labelled % composition (Major Program data slide) |
@@ -53,7 +53,7 @@ Geometry (16:9, content band `y` ≈ 2.0–5.05 in):
 2. Default **5** pins (allow 4–6) at `t` = 0, 0.25, 0.5, 0.75, 1 — peaks and valleys, left-to-right delivery order.
 3. Pin head = `ELLIPSE` (plus a small `TRIANGLE`/`RECTANGLE` stem). Cards, panels, and nodes stay `RECTANGLE`.
 4. Info card above each pin: feature title + up to 3 bullets. Card fill `#F2F2F2`, heading `#595959`.
-5. Stage colour (pin + card heading) cycles brand-book **diagram** accents only: `#00A3D6`, `#FF8B00`, `#6AA84F`, `#A64D79`, `#555555`. One orange accent still marks the point that matters (usually “now” / next delivery).
+5. Stage colour: **one** brand-orange pin marks “now” / next delivery. Other pins cycle diagram accents `#00A3D6`, `#6AA84F`, `#A64D79`, `#555555`.
 6. Copy from [examples/feature-roadmap-road.js](examples/feature-roadmap-road.js); rewrite the milestone list from the outline.
 
 Do **not** walk this file top to bottom and pour the story into every recipe.

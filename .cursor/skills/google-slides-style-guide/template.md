@@ -1,6 +1,6 @@
 # Template and builder
 
-## Empty Slide
+## Empty Slide (builder source)
 
 Every new deck is a Drive **copy** of Empty Slide:
 
@@ -8,7 +8,15 @@ Every new deck is a Drive **copy** of Empty Slide:
 
 - Update slide 1 (title) and slide 2 (first content); duplicate slide 2 for more pages.
 - Never delete the two starter slides.
-- Never edit the template file itself.
+- Never edit Empty Slide itself.
+
+## CTCT Slide Template (52-slide master — read only)
+
+Brand / Image Assets / Icon Library gallery:
+
+`1KXJnuCfkHnIekoKv_mU5F87n-eTOJvjWQ2rPH3qVfoM`
+
+Never edit this master. Copy Empty Slide to build; open the gallery only to match Image Assets, icons, and type.
 
 ## Chrome (do not redraw)
 

@@ -2,7 +2,7 @@
 
 **These tokens win any conflict** with preferences, examples, or leftover prompts.
 
-Source: [CTCT - Slide Template](https://docs.google.com/presentation/d/1KXJnuCfkHnIekoKv_mU5F87n-eTOJvjWQ2rPH3qVfoM/edit) theme + CTCT Brand Guidelines 2024. Do not pick colours from a stock infographic.
+Source: [CTCT - Slide Template](https://docs.google.com/presentation/d/1KXJnuCfkHnIekoKv_mU5F87n-eTOJvjWQ2rPH3qVfoM/edit) (52-slide master, **never edit**) theme + CTCT Brand Guidelines 2024. Colours are preloaded in the Theme palette — use them as directed; do not pick colours from a stock infographic.
 
 | Role | Value |
 |------|--------|
@@ -30,14 +30,16 @@ Brand book: colours in the boxed set are **only** for diagram difference (pins, 
 | Purple | `#A64D79` |
 | Purple wash | `#EAD1DC` |
 
-Winding-road pin cycle: blue → orange → green → purple → dark grey.
+Winding-road pin colours: diagram accents plus **one** brand-orange “now” pin. Other pins cycle blue / green / purple / dark grey — not a second orange and not a pastel pack.
 
-## Imagery and type (from the template)
+## Imagery and type (from the template Image Assets / Icon Library)
 
-- Orange / filtered / “sunset” photography **only** on title and intro slides.
+- **Image Assets:** orange / filtered / “sunset” photography **only** on title and intro slides. Unfiltered images for the rest of the presentation. Rangoli, hexagon, diagram, and component images stay on those named layouts — do not paste them onto a roadmap.
+- Background swaps are 16:9 from the Image Folder (`1ENm6a1yZEMr7G-4totgbjG06OIYTzs7C`).
 - Content slides: unfiltered photography or no photo; white/layout canvas, not a plain off-white substitute.
-- Icons: copy from the template Icon Library; recolour with Fill Color. No emoji. No invented pastel chips.
-- Do not change the Google font family (Proxima Nova on titles).
+- **Icons:** cut/copy from the template Icon Library (Educational, Business, Teamwork, Help, Creative, Tech); recolour with Fill Color. No emoji. No invented pastel chips.
+- **Type:** Proxima Nova titles 22–25pt; Inter body 12–14pt. Do not change the Google font family.
+- Never edit the 52-slide master. Never edit Empty Slide.
 
 ## Do not substitute
 

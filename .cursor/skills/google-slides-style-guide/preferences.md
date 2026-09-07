@@ -29,6 +29,7 @@ Read after [tokens.md](tokens.md) / [layouts.md](layouts.md); never override bra
 - Photorealistic, CTCT-domain (machines, jobsite, displays, control tech).
 - Calm **left** third for white title type; no baked-in text or logos.
 - Match the deck topic; do not reuse a generic landscape or the template default photo.
+- Orange / filtered / “sunset” hero photos **only** on title and intro slides (template Image Assets). Content slides stay unfiltered or have no photo.
 
 ## Phrasing
 
