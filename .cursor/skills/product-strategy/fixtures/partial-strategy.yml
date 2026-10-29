@@ -1,0 +1,151 @@
+# Renderer fixture only. Not a real strategy and not a starter template.
+# SWOT and decision filters are skipped on purpose.
+
+schema_version: 1
+
+sections:
+  frame:
+    status: confirmed
+    skip_reason: ""
+    product: Harbor Connect
+    horizon: Next 4 quarters
+    audience: Executive staff and product leadership
+    decision: Adopt this as the FY27 product strategy and fund the three initiatives
+
+  vision:
+    status: confirmed
+    skip_reason: ""
+    vision: Every operator can settle a multi-party job without leaving their own system.
+    mission: We make Harbor the system of record that other field-service tools trust.
+    direction: Shift from selling standalone scheduling to winning as the interoperability layer for mid-market field operators.
+
+  where_we_play:
+    status: confirmed
+    skip_reason: ""
+    regions_and_markets:
+      - name: North America mid-market field services
+        why: The direction is to win as the interoperability layer where we already have density.
+      - name: Australia and New Zealand install base
+        why: Existing customers are the fastest proof of connected jobs.
+    segments_and_cohorts:
+      - name: Operations directors at firms with 50–500 technicians
+        why: They own the cost of double entry.
+      - name: Integration leads at those firms
+        why: They choose which system other tools trust.
+    who_is_out:
+      - name: Solo operators
+        why: They do not carry a multi-tool stack.
+      - name: On-prem-only enterprise accounts
+        why: They conflict with a certified-connector motion.
+
+  needs:
+    status: confirmed
+    skip_reason: ""
+    items:
+      - name: Close a job across three tools
+        who: Operations directors
+        frequency: Daily
+        cost_of_status_quo: Double entry and missed invoices
+        evidence: 14 of 20 discovery calls
+        stance: own
+      - name: Prove which technician was on site
+        who: Compliance leads
+        frequency: Weekly
+        cost_of_status_quo: Failed audits
+        evidence: Two lost renewals cited audit gaps
+        stance: own
+      - name: Custom mobile branding
+        who: Marketing
+        frequency: Occasional
+        cost_of_status_quo: Low
+        evidence: Mentioned twice, with no win or loss attached
+        stance: acknowledge
+
+  how_we_win:
+    status: confirmed
+    skip_reason: ""
+    products:
+      - name: Partner API
+        need: Close a job across three tools
+        assumption: ""
+      - name: Job record
+        need: ""
+        assumption: ""
+    value_propositions:
+      - segment: Operations directors at firms with 50–500 technicians
+        statement: One job record that downstream tools can trust
+        alternative: Spreadsheets plus the incumbent scheduler
+
+  pillars:
+    status: draft
+    skip_reason: ""
+    grow:
+      - metric: Revenue
+        baseline: $4.2M from connected accounts
+        target: $6.0M
+        owner: CRO
+    interoperability:
+      - metric: Integration success
+        baseline: 71%
+        target: 90%
+        owner: VP Product
+    innovation:
+      - metric: Time to market
+        baseline: 16 weeks for a certified connector
+        target: 6 weeks
+        owner: Platform lead
+
+  swot:
+    status: skipped
+    skip_reason: Evidence review is next week
+    strengths: []
+    weaknesses: []
+    opportunities: []
+    threats: []
+
+  filters:
+    status: skipped
+    skip_reason: Finance owns the capacity conversation Thursday
+    must_haves: []
+    stop_list: []
+    resources: []
+
+  initiatives:
+    status: confirmed
+    skip_reason: ""
+    product:
+      - name: Certified connector program
+        need: Close a job across three tools
+        pillar_metric: Time to market
+        must_have: ""
+        outcome: Three reference connectors live in production
+        assumption: ""
+      - name: Audit trail
+        need: ""
+        pillar_metric: Integration success
+        must_have: ""
+        outcome: An audit packet a compliance lead can export
+        assumption: ""
+    operational:
+      - name: Integration support rota
+        supports: Certified connector program
+        assumption: ""
+
+  roadmap:
+    status: confirmed
+    skip_reason: ""
+    now:
+      - name: Publish the partner API contract
+        traces_to: Certified connector program
+        assumption: ""
+    next:
+      - name: First certified connector
+        traces_to: Certified connector program
+        assumption: ""
+    later:
+      - name: Audit packet export
+        traces_to: ""
+        assumption: ""
+    dependencies: The connector program depends on the published API contract.
+    reorder_assumption: A design partner slips past Q2.
+    delivered_means: Three certified connectors in production and integration success at 90%.
