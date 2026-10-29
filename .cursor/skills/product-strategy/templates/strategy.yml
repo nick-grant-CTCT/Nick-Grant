@@ -1,0 +1,92 @@
+# Product strategy source file.
+# Copy this file to strategy/<slug>.yml in the workspace root.
+# schema_version stays 1. Fill values. Do not add keys.
+# status: empty | draft | confirmed | skipped
+# Set skip_reason only when status is skipped.
+# Leave unknown links as "". Set assumption only when the user stated a working assumption.
+
+schema_version: 1
+
+sections:
+  frame:
+    status: empty
+    skip_reason: ""
+    product: ""
+    horizon: ""
+    audience: ""
+    decision: ""
+
+  vision:
+    status: empty
+    skip_reason: ""
+    vision: ""
+    mission: ""
+    direction: ""
+
+  where_we_play:
+    status: empty
+    skip_reason: ""
+    # name, why
+    regions_and_markets: []
+    segments_and_cohorts: []
+    who_is_out: []
+
+  needs:
+    status: empty
+    skip_reason: ""
+    # name, who, frequency, cost_of_status_quo, evidence, stance (own | acknowledge)
+    items: []
+
+  how_we_win:
+    status: empty
+    skip_reason: ""
+    # name, need, assumption
+    products: []
+    # segment, statement, alternative
+    value_propositions: []
+
+  pillars:
+    status: empty
+    skip_reason: ""
+    # metric, baseline, target, owner
+    grow: []
+    interoperability: []
+    innovation: []
+
+  swot:
+    status: empty
+    skip_reason: ""
+    # item, affects
+    strengths: []
+    weaknesses: []
+    opportunities: []
+    threats: []
+
+  filters:
+    status: empty
+    skip_reason: ""
+    # strings
+    must_haves: []
+    # item, protects
+    stop_list: []
+    # pillar (grow | interoperability | innovation), percent
+    resources: []
+
+  initiatives:
+    status: empty
+    skip_reason: ""
+    # name, need, pillar_metric, must_have, outcome, assumption
+    product: []
+    # name, supports, assumption
+    operational: []
+
+  roadmap:
+    status: empty
+    skip_reason: ""
+    # name, traces_to, assumption
+    now: []
+    next: []
+    later: []
+    dependencies: ""
+    reorder_assumption: ""
+    delivered_means: ""
